@@ -12,9 +12,9 @@ class PostsController < ApplicationController
 
   def create
     # binding.pry
-    # post = Post.create(content: params[:content])
-    Post.create(content: params[:content])
-    redirect_to action: :index
-    # render json:{ post: post }
+    post = Post.create(content: params[:content])
+    # Post.create(content: params[:content])
+    # redirect_to action: :index
+    render json:{ post: post }
   end
 end
