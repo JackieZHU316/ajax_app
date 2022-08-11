@@ -1,4 +1,4 @@
-function post(){
+function post (){
   // console.log("イベント発火")
   const submit = document.getElementById("submit");
   submit.addEventListener("click", (e) => {
