@@ -21,8 +21,8 @@ function post (){
     const form = document.getElementById("form");
     const formData = new FormData(form);
     const XHR = new XMLHttpRequest();
-    // XHR.open("POST", "/posts", true);
-    XHR.open("POST", "/post", true);
+    XHR.open("POST", "/posts", true);
+    // XHR.open("POST", "/post", true);
     XHR.responseType = "json";
     XHR.send(formData);
     XHR.onload = () => {
